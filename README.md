@@ -1,184 +1,55 @@
-# 📊 Corporate Financial Risk Analysis Dashboard
+# 💳 Credit Portfolio Risk & Behavioral Analytics Dashboard
 
-An interactive **Power BI dashboard** developed to analyze the financial health of corporate companies and support **credit risk assessment** through financial performance analysis and business intelligence. This project provides an executive-level overview of corporate financial risk using key financial metrics and interactive visualizations.
+[![Power BI](https://img.shields.io/badge/Power_BI-F2C811?style=for-the-badge&logo=power-bi&logoColor=black)](https://powerbi.microsoft.com/)
+[![DAX](https://img.shields.io/badge/DAX-00758F?style=for-the-badge&logo=microsoft&logoColor=white)](https://learn.microsoft.com/en-us/dax/)
+[![Financial Analytics](https://img.shields.io/badge/Domain-Credit_Risk_%26_Banking-00518B?style=for-the-badge)](https://github.com/)
 
----
-
-## 📌 Project Overview
-
-Financial institutions need to continuously monitor the financial health of corporate clients before making lending and credit decisions. Manual analysis of financial statements is time-consuming and makes it difficult to identify financially vulnerable companies at an early stage.
-
-This project transforms corporate financial data into an interactive Power BI dashboard that helps identify high-risk companies, compare industry performance, monitor financial indicators, and support data-driven credit risk management.
+An institutional-grade, multi-page Power BI dashboard designed for Tier-1 credit risk monitoring, subprime exposure analysis, and behavioral delinquency forecasting. Modeled after risk analytics frameworks used by credit card issuers and retail banking institutions.
 
 ---
 
-## 🎯 Problem Statement
+## 📑 Dashboard Architecture
 
-Financial institutions manage large portfolios of corporate clients across multiple industries. Evaluating the financial health of every company manually is both time-consuming and inefficient. Companies with increasing liabilities, weak cash flow, declining profitability, or excessive leverage may present a higher risk of financial distress.
+The dashboard is structured into **three distinct reporting pages**, moving from macroeconomic risk down to individual behavioral stress indicators:
 
-The objective of this project is to develop an interactive analytics dashboard that enables analysts to identify high-risk companies, monitor financial performance, analyze industry-wise risk, and support informed credit risk and portfolio management decisions.
+### Page 1: Executive Risk Summary
+Focused on overall portfolio exposure, delinquency concentration, and credit score dynamics.
+* **Top KPIs:** Total Outstanding Debt ($131.21M), Total Customers (11.81K), Average Interest Rate (14.21%), Credit Utilization Ratio (32.31%), Average Payment Delay (20.63 days).
+* **Credit Utilization Trend:** Monthly trajectory of credit utilization broken down by credit risk tier (Good, Standard, Poor).
+* **Capital Risk Exposure:** Debt concentration by Credit Mix (Bad, Standard, Good) highlighting severe subprime capital concentration.
+* **Delinquency Scaling:** Payment delay escalation across bank account holdings and interest rate tiers.
 
----
+### Page 2: Demographic Portfolio Risk Analysis
+Isolates systemic vulnerability across earnings tiers, age cohorts, and occupational segments.
+* **Top KPIs:** High-Risk Customers (12K), Average Annual Income ($51.20K), Average Portfolio Age (34.08 years), Active Loan Density, Capital Risk Exposure ($63.90M).
+* **Occupation & Age Segmentation:** Distribution of credit risk tiers across key professions (Lawyers, Engineers, Architects, Developers, Mechanics) and age brackets (Mid-Career, Established, Early Career, Entry, Pre-Retirement).
+* **Capital Buffer Analysis:** Outstanding debt vs. monthly investment capacity mapped across income brackets (Low to High Income).
 
-## 🎯 Project Objectives
-
-- Identify high-risk corporate companies using financial indicators.
-- Monitor overall portfolio health through executive KPIs.
-- Analyze assets, liabilities, revenue, profitability, and cash flow.
-- Compare financial risk across different industries.
-- Support data-driven credit risk assessment.
-- Provide actionable insights for better portfolio management.
-
----
-
-## 📂 Dataset Information
-
-The dataset contains corporate financial information including:
-
-- Company ID
-- Industry Sector
-- Revenue
-- Total Assets
-- Total Liabilities
-- Current Assets
-- Current Liabilities
-- Net Income
-- Operating Income
-- Cash Flow
-- Debt-to-Equity Ratio
-- Return on Assets (ROA)
-- Working Capital Ratio
-- Financial Risk Label
-- Stock Price
-- Economic Indicators
-  - GDP Growth Rate
-  - Interest Rate
-  - Inflation Rate
+### Page 3: Behavioral Delinquency & Early Warning Signals
+Tracks active credit stress, liquidity exhaustion, and credit-seeking desperation.
+* **Top KPIs:** Delinquent Accounts (12K), Average Payment Delay (20.63 days), High Inquiry Exposure ($81.23M), Interest Burden Index (2.50%), Inquiries per Delinquent Customer (5.69).
+* **Liquidity & Buffer Trajectory:** Monthly cash balance decay across age demographics and credit mix categories.
+* **Product Proliferation:** Average loan count per credit mix category (isolating over-leveraged borrowers averaging 6.36 active loans).
+* **Early Warning Distress Indicators:**
+  * **Days Delayed vs. EMI Strain:** Correlation between payment delay duration and rising monthly debt servicing loads.
+  * **Credit Seeking Intensity:** Inquiries vs. payment delays, identifying cash-flow desperation (spiking at 10–20 overdue cycles).
+  * **Debt Trajectory:** Outstanding debt growth curves across income categories and credit ratings.
 
 ---
 
-## 📈 Dashboard Features
+## 📈 Key Portfolio Insights
 
-### Executive KPIs
-
-- Total Companies
-- Total Revenue
-- Total Assets
-- Total Liabilities
-- High-Risk Ratio
-- Average Debt-to-Equity Ratio
-
-### Visualizations
-
-- Financial Risk Distribution
-- Revenue by Industry
-- Assets vs Liabilities
-- Risk by Industry
-- Debt-to-Equity Ratio by Industry
-- Cash Flow by Risk Status
-
----
-
-## 📊 Business Insights
-
-The dashboard enables business users to:
-
-- Identify companies with high financial risk.
-- Compare financial health across industries.
-- Monitor debt and liability exposure.
-- Evaluate profitability and cash flow performance.
-- Support lending and credit approval decisions.
-- Improve portfolio risk monitoring.
-
----
-
-## 🛠️ Tools & Technologies
-
-- Microsoft Power BI
-- Power Query
-- DAX
-- Data Modeling
-- Data Cleaning
-- Data Transformation
-- Data Visualization
-
----
-
-## 📌 Data Preparation
-
-The following preprocessing steps were performed:
-
-- Verified data quality
-- Converted data types
-- Created calculated columns
-- Created DAX measures
-- Built data model
-- Formatted financial metrics
-- Designed interactive visuals
-
----
-
-## 📊 Key Performance Indicators (KPIs)
-
-- Total Companies
-- High-Risk Companies
-- High-Risk Ratio
-- Total Revenue
-- Total Assets
-- Total Liabilities
-- Average Debt-to-Equity Ratio
+1. **Account Proliferation as Default Predictor:** Borrowers categorized under a "Bad" credit mix hold an average of **6.36 active loans**, compared to just **1.98 loans** for "Good" credit mix customers.
+2. **Credit-Seeking Desperation Spikes:** Credit inquiries surge sharply (peaking near **39K inquiries**) among borrowers who have already logged **10 to 20 payment delays**, serving as an early indicator of severe liquidity stress before formal default.
+3. **Cash Cushion Exhaustion:** Unspent monthly cash balances remain flat across age groups for high-risk accounts, leaving borrowers with inadequate liquidity buffers to withstand macroeconomic income shocks.
 
 ---
 
 
----
+## 👤 Author
 
-## 🚀 Business Impact
-
-This dashboard helps organizations to:
-
-- Detect financially vulnerable companies early.
-- Improve corporate credit assessment.
-- Reduce potential financial losses.
-- Monitor portfolio risk efficiently.
-- Support strategic lending decisions.
-- Enable data-driven financial risk management.
+**Santhosh S**  
+* **GitHub:** [@santhosh-labs](https://github.com/santhosh-labs)
+* **LinkedIn:** [santhosh-linkedin](https://linkedin.com/in/santhosh-portfolio)
 
 ---
-
-## 📚 Skills Demonstrated
-
-- Business Intelligence
-- Power BI Dashboard Development
-- Financial Data Analysis
-- Credit Risk Analysis
-- Data Cleaning
-- Data Transformation
-- DAX Calculations
-- Data Modeling
-- KPI Development
-- Interactive Reporting
-- Business Analytics
-- Data Visualization
-
----
-
-## 👨‍💻 Author
-
-**Santhosh**
-
-AI & Data Science Graduate | Data Analyst
-
-**Skills**
-
-- Power BI
-- SQL
-- Python
-- Tableau
-- Excel
-- Data Analysis
-- Data Visualization
-
----
-
-## ⭐ If you found this project useful, consider giving it a star!
